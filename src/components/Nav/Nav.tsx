@@ -164,7 +164,7 @@ const Nav = () => {
                 <ListItemLink primary="BondRoom" to="/bondroom" />
                 <ListItemLink primary="SBS" to="/sbs" />
                 <ListItemLink primary="Liquidity" to="/liquidity" />
-                <ListItem button component="a" href="https://docs.voodoo.finance">
+                <ListItem button component="a" href="https://voodoo-finance.gitbook.io/voodoo-finance/">
                   <ListItemText>Docs</ListItemText>
                 </ListItem>
                 <ListItem style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
