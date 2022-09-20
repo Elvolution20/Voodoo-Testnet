@@ -119,7 +119,7 @@ const Nav = () => {
               <Link color="textPrimary" to="/liquidity" className={classes.link}>
                 Liquidity
               </Link>
-              <a href="https://docs.voodoo.finance" className={classes.link}>
+              <a href="https://voodoo-finance.gitbook.io/voodoo-finance/" className={classes.link}>
                 Docs
               </a>
             </Box>
