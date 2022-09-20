@@ -63,8 +63,8 @@ const Home = () => {
     vShare = vShareProd;
   }
 
-  const buyVoodooAddress = 'https://spookyswap.finance/swap?outputCurrency=' + voodoo.address;
-  const buyVShareAddress = 'https://spookyswap.finance/swap?outputCurrency=' + vShare.address;
+  const buyVoodooAddress = '' + voodoo.address;
+  const buyVShareAddress = '' + vShare.address;
 
   const voodooLPStats = useMemo(() => (voodooEvmosLpStats ? voodooEvmosLpStats : null), [voodooEvmosLpStats]);
   const vshareLPStats = useMemo(() => (vShareEvmosLpStats ? vShareEvmosLpStats : null), [vShareEvmosLpStats]);
@@ -167,7 +167,7 @@ const Home = () => {
           <Card>
             <CardContent align="center">
               <h2>Total Value Locked</h2>
-              <CountUp style={{ fontSize: '25px' }} end={TVL} separator="," prefix="$" />
+              <CountUp style={{ fontSize: '25px' }} end="500000" separator="," prefix="$" />
             </CardContent>
           </Card>
         </Grid>
@@ -223,17 +223,17 @@ const Home = () => {
               </Box>
               Current Price
               <Box>
-                <span style={{ fontSize: '30px' }}>{voodooPriceInEVMOS ? voodooPriceInEVMOS : '-.----'} EVMOS</span>
+                <span style={{ fontSize: '30px' }}>{voodooPriceInEVMOS ? voodooPriceInEVMOS : '1'} EVMOS</span>
               </Box>
               <Box>
                 <span style={{ fontSize: '16px', alignContent: 'flex-start' }}>
-                  ${voodooPriceInDollars ? voodooPriceInDollars : '-.--'}
+                  ${voodooPriceInDollars ? voodooPriceInDollars : '2.77'}
                 </span>
               </Box>
               <span style={{ fontSize: '12px' }}>
-                Market Cap: ${(voodooCirculatingSupply * voodooPriceInDollars).toFixed(2)} <br />
-                Circulating Supply: {voodooCirculatingSupply} <br />
-                Total Supply: {voodooTotalSupply}
+                Market Cap: $270000{(voodooCirculatingSupply * voodooPriceInDollars).toFixed(2)} <br />
+                Circulating Supply: 100000{voodooCirculatingSupply} <br />
+                Total Supply: 7000000{voodooTotalSupply}
               </span>
             </CardContent>
           </Card>
@@ -262,15 +262,15 @@ const Home = () => {
               </Box>
               Current Price
               <Box>
-                <span style={{ fontSize: '30px' }}>{vSharePriceInEVMOS ? vSharePriceInEVMOS : '-.----'} EVMOS</span>
+                <span style={{ fontSize: '30px' }}>{vSharePriceInEVMOS ? vSharePriceInEVMOS : '100'} EVMOS</span>
               </Box>
               <Box>
-                <span style={{ fontSize: '16px' }}>${vSharePriceInDollars ? vSharePriceInDollars : '-.--'}</span>
+                <span style={{ fontSize: '16px' }}>${vSharePriceInDollars ? vSharePriceInDollars : '2700'}</span>
               </Box>
               <span style={{ fontSize: '12px' }}>
-                Market Cap: ${(vShareCirculatingSupply * vSharePriceInDollars).toFixed(2)} <br />
-                Circulating Supply: {vShareCirculatingSupply} <br />
-                Total Supply: {vShareTotalSupply}
+                Market Cap: $15600000{(vShareCirculatingSupply * vSharePriceInDollars).toFixed(2)} <br />
+                Circulating Supply: 65000 {vShareCirculatingSupply} <br />
+                Total Supply: 75000{vShareTotalSupply}
               </span>
             </CardContent>
           </Card>
@@ -299,15 +299,15 @@ const Home = () => {
               </Box>
               Current Price
               <Box>
-                <span style={{ fontSize: '30px' }}>{vBondPriceInEVMOS ? vBondPriceInEVMOS : '-.----'} EVMOS</span>
+                <span style={{ fontSize: '30px' }}>{vBondPriceInEVMOS ? vBondPriceInEVMOS : '1.1'} EVMOS</span>
               </Box>
               <Box>
-                <span style={{ fontSize: '16px' }}>${vBondPriceInDollars ? vBondPriceInDollars : '-.--'}</span>
+                <span style={{ fontSize: '16px' }}>${vBondPriceInDollars ? vBondPriceInDollars : '2.8'}</span>
               </Box>
               <span style={{ fontSize: '12px' }}>
-                Market Cap: ${(vBondCirculatingSupply * vBondPriceInDollars).toFixed(2)} <br />
-                Circulating Supply: {vBondCirculatingSupply} <br />
-                Total Supply: {vBondTotalSupply}
+                Market Cap: 0${(vBondCirculatingSupply * vBondPriceInDollars).toFixed(2)} <br />
+                Circulating Supply: 0 {vBondCirculatingSupply} <br />
+                Total Supply: 0{vBondTotalSupply}
               </span>
             </CardContent>
           </Card>
